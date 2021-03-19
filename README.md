@@ -7,6 +7,7 @@ its designed to cut out boilerplate so you can get straight to coding.
 
 Included in this app:
 
+- [asdf](https://github.com/asdf-vm/asdf) `.tool-versions` file for recent Elixir/OTP versions
 - Phoenix Web Layer
 - Webpack Front-end build system
 - React
@@ -17,6 +18,7 @@ Included in this app:
 
 To start your Phoenix server:
 
+  * Have postgres available on standard local port
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.setup`
   * Install Node.js dependencies with `npm install` inside the `assets` directory
