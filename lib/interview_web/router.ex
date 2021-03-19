@@ -1,5 +1,5 @@
-defmodule IntervewWeb.Router do
-  use IntervewWeb, :router
+defmodule InterviewWeb.Router do
+  use InterviewWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,10 +13,10 @@ defmodule IntervewWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", IntervewWeb do
+  scope "/", InterviewWeb do
     pipe_through :browser
 
     get "/api/me", Api.ExampleController, :me
-    get "/*_catchall", PageController, :index
+    get "/*catchall", PageController, :index
   end
 end

@@ -1,5 +1,5 @@
-defmodule IntervewWeb.ErrorView do
-  use IntervewWeb, :view
+defmodule InterviewWeb.ErrorView do
+  use InterviewWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

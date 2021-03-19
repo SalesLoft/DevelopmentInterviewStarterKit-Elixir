@@ -22,7 +22,7 @@ const App = ({ store }) => (
   <Provider store={store}>
     <ThemeProvider theme={theme}>
       <Router>
-          <Route exact path="/" component={LandingPage}/>
+        <Route exact path="/" component={LandingPage}/>
       </Router>
     </ThemeProvider>
   </Provider>

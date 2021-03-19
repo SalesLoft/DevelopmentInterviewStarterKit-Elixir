@@ -1,10 +1,10 @@
 use Mix.Config
 
 # Configure your database
-config :intervew, Intervew.Repo,
+config :interview, Interview.Repo,
   username: "postgres",
   password: "postgres",
-  database: "salesloft_intervew_dev",
+  database: "salesloft_interview_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -15,7 +15,7 @@ config :intervew, Intervew.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :intervew, IntervewWeb.Endpoint,
+config :interview, InterviewWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -55,12 +55,12 @@ config :intervew, IntervewWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :intervew, IntervewWeb.Endpoint,
+config :interview, InterviewWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"lib/intervew_web/(live|views)/.*(ex)$",
-      ~r"lib/intervew_web/templates/.*(eex)$"
+      ~r"lib/interview_web/(live|views)/.*(ex)$",
+      ~r"lib/interview_web/templates/.*(eex)$"
     ]
   ]
 

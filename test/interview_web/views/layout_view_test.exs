@@ -1,5 +1,5 @@
-defmodule IntervewWeb.LayoutViewTest do
-  use IntervewWeb.ConnCase, async: true
+defmodule InterviewWeb.LayoutViewTest do
+  use InterviewWeb.ConnCase, async: true
 
   # When testing helpers, you may want to import Phoenix.HTML and
   # use functions such as safe_to_string() to convert the helper

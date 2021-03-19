@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :intervew,
-  ecto_repos: [Intervew.Repo]
+config :interview,
+  ecto_repos: [Interview.Repo]
 
 # Configures the endpoint
-config :intervew, IntervewWeb.Endpoint,
+config :interview, InterviewWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "wjobrdE1bFyjUrMRUZBspXo8R81817rxHdEI41eqEAQnQ70IwBz6McRzVaxdsnHC",
-  render_errors: [view: IntervewWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: Intervew.PubSub,
+  render_errors: [view: InterviewWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: Interview.PubSub,
   live_view: [signing_salt: "wEv1fVuN"]
 
 # Configures Elixir's Logger

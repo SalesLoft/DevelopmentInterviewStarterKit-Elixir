@@ -1,4 +1,4 @@
-defmodule IntervewWeb.ChannelCase do
+defmodule InterviewWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule IntervewWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use IntervewWeb.ChannelCase, async: true`, although
+  by setting `use InterviewWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -21,18 +21,18 @@ defmodule IntervewWeb.ChannelCase do
     quote do
       # Import conveniences for testing with channels
       import Phoenix.ChannelTest
-      import IntervewWeb.ChannelCase
+      import InterviewWeb.ChannelCase
 
       # The default endpoint for testing
-      @endpoint IntervewWeb.Endpoint
+      @endpoint InterviewWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Intervew.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Interview.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Intervew.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Interview.Repo, {:shared, self()})
     end
 
     :ok

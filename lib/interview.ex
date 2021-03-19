@@ -1,6 +1,6 @@
-defmodule Intervew do
+defmodule Interview do
   @moduledoc """
-  Intervew keeps the contexts that define your domain
+  Interview keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

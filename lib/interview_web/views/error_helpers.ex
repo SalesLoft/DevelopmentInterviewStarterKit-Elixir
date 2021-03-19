@@ -1,4 +1,4 @@
-defmodule IntervewWeb.ErrorHelpers do
+defmodule InterviewWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """

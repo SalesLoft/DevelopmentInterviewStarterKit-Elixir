@@ -1,9 +1,9 @@
-defmodule Intervew.MixProject do
+defmodule Interview.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :intervew,
+      app: :interview,
       version: "0.1.0",
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule Intervew.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Intervew.Application, []},
+      mod: {Interview.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
