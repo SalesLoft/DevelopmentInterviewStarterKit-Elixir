@@ -16,7 +16,7 @@ const StyledNavBar = styled.nav`
   width: 100%;
 `;
 
-let NavText = styled.p`
+let NavText = styled.div`
   color: #4a90e2;
   padding-right: 10px;
   padding-left: 10px;
@@ -37,21 +37,21 @@ const Badge = styled.div`
   background-color: #4a90e2;
 `;
 
-let SignInBadge = () => (
+let Loading = () => (
   <Badge>
-    <a href='/users/auth/salesloft' style={{textDecoration: 'none'}}><NavText>Login</NavText></a>
+    <NavText>Loading...</NavText>
   </Badge>
 );
 
 let UserBadge = ({user}) => (
   <Badge>
-    <a href='/users/auth/logout' style={{textDecoration: 'none'}}><NavText>{user.name}</NavText></a>
+    <NavText>{user.name}</NavText>
   </Badge>
 );
 
 let NavBar = ({user}) => (
   <StyledNavBar>
-    {user ? <UserBadge user={user} /> : <SignInBadge />}
+    {user.me ? <UserBadge user={user.me} /> : <Loading />}
   </StyledNavBar>
 );
 

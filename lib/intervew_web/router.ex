@@ -16,6 +16,7 @@ defmodule IntervewWeb.Router do
   scope "/", IntervewWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/api/me", Api.ExampleController, :me
+    get "/*_catchall", PageController, :index
   end
 end
